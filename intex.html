@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="el">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Είσοδος</title>
+
+<style>
+
+body {
+
+    font-family: Arial;
+
+    background: #f2f2f2;
+
+    display: flex;
+
+    height: 100vh;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.box {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+input {
+
+    padding: 10px;
+
+    margin-top: 10px;
+
+    width: 200px;
+
+}
+
+button {
+
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>Εισαγωγή Κωδικού</h2>
+
+    <input type="password" id="password" placeholder="Κωδικός">
+
+    <br>
+
+    <button onclick="checkPassword()">Είσοδος</button>
+
+</div>
+
+<script>
+
+function checkPassword() {
+
+    const pass = document.getElementById("password").value;
+
+    // 🔑 αλλαγή κωδικού εδώ
+
+    if (pass === "READ2026") {
+
+        window.location.href = "results.html";
+
+    } else {
+
+        alert("Λάθος κωδικός");
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
